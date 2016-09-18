@@ -3,7 +3,13 @@
 # bonus: returns a string of all missing letters as a string. ex: find_missing_letter("ace") would return "bd", write your own test.
 
 def find_missing_letter(range)
+  range_array = range.split(//)
+  letter_order = []
 
+  range_array.each do |letter|
+    letter_order << letter
+  end  
+  letter_order = letter_order.sort.join
 end
 
 # Driver code - don't touch anything below this line.
